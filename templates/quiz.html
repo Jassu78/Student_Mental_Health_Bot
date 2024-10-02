@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Mental Abilities Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Mental Abilities Quiz</h2>
+        <form method="POST">
+            <h3>1. How do you usually feel when facing challenges?</h3>
+            <input type="radio" name="q1" value="1" required> Confident
+            <input type="radio" name="q1" value="0"> Anxious
+            
+            <h3>2. How often do you seek help from others?</h3>
+            <input type="radio" name="q2" value="1" required> Frequently
+            <input type="radio" name="q2" value="0"> Rarely
+            
+            <h3>3. Do you feel comfortable discussing your feelings with someone?</h3>
+            <input type="radio" name="q3" value="1" required> Yes
+            <input type="radio" name="q3" value="0"> No
+            
+            <h3>4. How do you handle stress?</h3>
+            <input type="radio" name="q4" value="1" required> Calmly
+            <input type="radio" name="q4" value="0"> I panic
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

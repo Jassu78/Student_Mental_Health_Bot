@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Main Page</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the Mental Health Chatbot</h2>
+        <p><strong>Your Companion for Emotional Support and Well-Being</strong></p>
+    <p>In today's fast-paced world, taking care of your mental health is more important than ever. Our Mental Health Chatbot is designed specifically for students, providing a safe space to talk about your feelings, seek guidance, and explore strategies for emotional well-being.</p>
+    
+    <h3>Key Features:</h3>
+    <ul>
+        <li><strong>Personalized Interaction:</strong> Engage in meaningful conversations with our AI, which adapts to your mental health needs based on your responses and quiz results.</li>
+        <li><strong>User-Friendly Interface:</strong> Navigate easily through our intuitive design, allowing for a seamless chat experience.</li>
+        <li><strong>Profile Customization:</strong> Create your unique profile, upload a profile picture, and track your mental health journey.</li>
+        <li><strong>Confidential and Secure:</strong> Your privacy is our priority. All conversations are kept confidential, ensuring a safe environment to express yourself.</li>
+        <li><strong>Accessible Resources:</strong> Access helpful resources and coping strategies tailored to your needs.</li>
+    </ul>
+
+    <p>Whether you need someone to talk to, resources for mental wellness, or just a moment of reflection, our Mental Health Chatbot is here for you. Start your journey toward better mental health today!</p>
+        <div class="button-container">
+            <a href="{{ url_for('profile') }}" class="button">Profile 📝</a>
+            <a href="{{ url_for('chat') }}" class="button">Chat Now 💬</a>
+
+        </div>
+    </div>
+</body>
+</html>

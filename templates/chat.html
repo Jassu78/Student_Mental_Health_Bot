@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Chat with Mental Health Bot</h2>
+        <a href="{{ url_for('main') }}" class="home-button">Home</a>
+        
+        <div class="chat-box">
+            {% for message in chat_history %}
+                <div class="user-message"><strong>You:</strong> {{ message.user }}</div>
+                <div class="bot-message"><strong>Bot:</strong> {{ message.bot }}</div>
+            {% endfor %}
+        </div>
+        
+        <form method="POST">
+            <input type="text" name="message" required placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
