@@ -9,7 +9,7 @@ load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
-app.secret_key = '9491011303Jassu'  # Change this to a random secret key
+app.secret_key = 'Random'  # Change this to a random secret key
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'  # SQLite database
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
